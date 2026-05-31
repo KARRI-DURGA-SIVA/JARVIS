@@ -326,6 +326,10 @@ function canvasApp() {
 
 
 $(function () {
+	if (!$.fn.slider || !$("#slider-range").length) {
+		return;
+	}
+
 	$("#slider-range").slider({
 		range: false,
 		min: 20,
@@ -339,6 +343,10 @@ $(function () {
 });
 
 $(function () {
+	if (!$.fn.slider || !$("#slider-test").length) {
+		return;
+	}
+
 	$("#slider-test").slider({
 		range: false,
 		min: 1.0,
